@@ -4,6 +4,9 @@ machine:
 dependencies:
   override:
     - docker build -t raintank/graphite-stack .
+test:
+  override:
+    - echo "test"
 deployment:
   production:
     branch: master
